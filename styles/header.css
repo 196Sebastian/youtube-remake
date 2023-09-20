@@ -57,13 +57,10 @@
 
 .icon-search {
   height: 25px;
-  margin-top: 4px;
-  margin-left: -1px;
 }
 
 .icon-voice-search {
   height: 24px;
-  margin-top: 4px;
 }
 
 .icon-hamburger {
@@ -110,6 +107,18 @@
   margin-right: 20px;
 }
 
+.button-search,
+.button-voice-search,
+.upload-icon-container,
+.youtube-apps-container,
+.notifications-container
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-search {
   height: 40px;
   width: 66px;
@@ -118,6 +127,35 @@
   border-width: 1px;
   border-style: solid;
   border-color: rgb(193, 192, 192);
+}
+
+.button-search .tooltip,
+.button-voice-search .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notifications-container .tooltip
+{
+  font-family: Roboto, Arial;
+  position: absolute;
+  color: white;
+  padding: 4px;
+  background-color: gray;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.button-search:hover .tooltip,
+.button-voice-search:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-container:hover .tooltip
+{
+  opacity: 1;
 }
 
 .button-voice-search {
