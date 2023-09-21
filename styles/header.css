@@ -8,9 +8,7 @@
   top: 0;
   right: 0;
   background-color: white;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(128, 128, 128);
+  border: 1px solid rgb(128, 128, 128);;
   z-index: 100;
 }
 
@@ -43,15 +41,12 @@
   width: 0;
   padding-left: 10px;
   font-size: 16px;
-  border-width: 1px;
   border-radius: 2px;
-  border-style: solid;
-  border-color: rgb(193, 192, 192);
+  border: 1px solid rgb(193, 192, 192);
   box-shadow: inset 1px 2px 3px rgb(0, 0, 0, 0.05);
 }
 
 .search-bar::placeholder {
-  font-family: Roboto, Arial;
   font-size: 16px;
 }
 
@@ -94,7 +89,6 @@
   right: -5px;
   background-color: rgb(200, 0, 0);
   color: white;
-  font-family: Roboto, Arial;
   font-size: 11px;
   padding-block: 2px;
   padding-inline: 5px;
@@ -135,7 +129,6 @@
 .youtube-apps-container .tooltip,
 .notifications-container .tooltip
 {
-  font-family: Roboto, Arial;
   position: absolute;
   color: white;
   padding: 4px;
