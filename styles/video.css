@@ -1,5 +1,6 @@
 .thumbnail {
   width: 100%;
+  border-radius: 4px;
 }
 
 .video-title {
@@ -42,12 +43,6 @@
   row-gap: 40px;
 }
 
-@media (max-width: 750px) {
-  .video-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .video-time {
   background-color: black;
   color: white;
@@ -58,6 +53,41 @@
   font-size: 12px;
   font-weight: 500;
   border-radius: 2px;
+}
+
+.channel-avi:hover {
+  cursor: pointer;
+}
+
+.channel-avi-section {
+  position: relative;
+  height: 60px;
+}
+
+.channel-avi-section .tooltip {
+  position: absolute;
+  color: white;
+  padding: 6px;
+  background-color: rgb(115, 113, 113);
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -5px;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.15;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.channel-avi-section:hover .tooltip {
+  opacity: 1;
+  transition-duration: 500ms;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width:751) and (max-width: 999px) {

@@ -8,7 +8,6 @@
   top: 0;
   right: 0;
   background-color: white;
-  border: 1px solid rgb(128, 128, 128);;
   z-index: 100;
 }
 
@@ -38,12 +37,16 @@
 .search-bar {
   flex: 1;
   height: 36px;
-  width: 0;
   padding-left: 16px;
   font-size: 16px;
+  outline: none;
   border-radius: 22px 0 0 22px;
   border: 1px solid rgb(204, 204, 204);
   box-shadow: inset 1px 2px 3px rgb(0, 0, 0, 0.05);
+}
+
+.search-bar:focus {
+  box-shadow: inset 0 0 1px 1px #3f51b5;
 }
 
 .search-bar::placeholder {
@@ -62,8 +65,7 @@
 .icon-upload,
 .icon-notifications,
 .icon-voice-search,
-.icon-search
-{
+.icon-search {
   height: 24px;
 }
 
@@ -96,8 +98,7 @@
 .button-search,
 .button-voice-search,
 .upload-icon-container,
-.notifications-container
-{
+.notifications-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -110,16 +111,13 @@
   margin-right: 10px;
   border-radius: 0 22px 22px 0;
   background-color: rgb(240, 240, 240);
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(193, 192, 192);
+  border: 1px solid rgb(193, 192, 192);
 }
 
 .button-search:hover,
 .button-voice-search:hover,
 .upload-icon-container:hover,
-.notifications-container:hover
-{
+.notifications-container:hover {
   cursor: pointer;
   background-color: rgba(130, 127, 127, 0.242);
 }
@@ -127,8 +125,7 @@
 .button-search .tooltip,
 .button-voice-search .tooltip,
 .upload-icon-container .tooltip,
-.notifications-container .tooltip
-{
+.notifications-container .tooltip {
   position: absolute;
   color: white;
   padding: 6px;
@@ -145,9 +142,9 @@
 .button-search:hover .tooltip,
 .button-voice-search:hover .tooltip,
 .upload-icon-container:hover .tooltip,
-.notifications-container:hover .tooltip
-{
+.notifications-container:hover .tooltip {
   opacity: 1;
+  transition-duration: 200ms;
 }
 
 .button-voice-search {
@@ -159,8 +156,7 @@
 }
 
 .upload-icon-container,
-.notifications-container
-{
+.notifications-container {
   height: 40px;
   width: 40px;
   border-radius: 20px;
