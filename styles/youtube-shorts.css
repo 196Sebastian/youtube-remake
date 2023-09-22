@@ -1,0 +1,16 @@
+.youtube-short-logo {
+  height: 28px;
+}
+
+.youtube-short-section {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.short-thumbnail {
+  border-radius: 4px;
+  height: 396px;
+  width: 224px;
+  object-fit: cover;
+  object-position: -50px 0;
+}
