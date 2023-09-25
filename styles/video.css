@@ -26,6 +26,11 @@
   position: relative;
 }
 
+.thumbnail-row:hover,
+.video-info-grid:hover {
+  cursor: pointer;
+}
+
 .video-author,
 .video-stats {
   font-size: 12px;
