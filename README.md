@@ -23,6 +23,15 @@ List of things covered in the YouTube course!
 And many more! 
 
 # 🎚️ **On My Own!**
+Using what I've learned from the tutorial I went on my own and make some upgrades to have a similar look to the
+most recent youtube! 
+### Things I've learned
+* A better understanding of Semantic Elements
+* Inheritance
+* Better usages of CSS Selectors
+* CSS :focus Selector
+* CSS transition-duration Property
+
 https://github.com/196Sebastian/youtube-remake/assets/87108242/90a99338-8e0a-4eb1-bf0b-b43bc15cae9b
 
 # 🔔 **Contact Me!**
